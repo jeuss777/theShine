@@ -58,6 +58,8 @@ development:
 test:
   <<: *default
   database: shine_test
+  username: shine
+  password: shine
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -82,4 +84,5 @@ production:
   <<: *default
   database: shine_production
   username: shine
-  password: <%= ENV['SHINE_DATABASE_PASSWORD'] %>
+#  password: <%= ENV['SHINE_DATABASE_PASSWORD'] %>
+  password: shine
